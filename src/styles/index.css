@@ -1,4 +1,17 @@
+.st-jumbo {
+    background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*jQSl7ueErmbEHFO6zoJQTQ.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    top: 0%;
+}
 
+.navbar {
+    border-bottom: unset !important;
+}
+  
 /* 
 
     You can write your own styles here...

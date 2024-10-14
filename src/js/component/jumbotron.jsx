@@ -3,12 +3,18 @@ import React from "react";
 //create your first component
 const Jumbotron = () => {
 	return (
-		<div class="container">
-            <div class="container  position-absolute pe-5 pt-5"> 
-                <h1 class="align-self-center text-center bg-light text-dark ">One Page Wonder</h1>
-                <h2 class="align-self-center text-center bg-light text-dark ">Will Knock Your Socks Off</h2>  
+        <div className="st-jumbo">
+        <div className="container" style={{height: 100 + '%'}}>
+            <div className="d-flex flex-column justify-content-center" style={{height: 100 + '%'}}>
+            <div className="row px-3">
+                    <div className="bg-light rounded-3 py-5 px-5">
+                        <h1 className="display-5 fw-bold">Custom jumbotron</h1>
+                        <p className="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                        <button className="btn btn-primary btn-lg" type="button">Example button</button>
+                    </div>
             </div>
-            <img src="https://miro.medium.com/v2/resize:fit:1200/1*jQSl7ueErmbEHFO6zoJQTQ.jpeg" class="w-100" alt=""/>
+            </div>
+        </div>
         </div>
 	);
 };

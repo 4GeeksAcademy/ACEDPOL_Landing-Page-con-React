@@ -1,13 +1,16 @@
 import React from "react";
 
+//include images into your bundle
+import bigProjectImage from "../../img/big-project-image.png";
+
 //create your first component
 const Card = () => {
 	return (
-		<div class="col-lg-4 px-3 mb-4 ">
-            <img src="assets/img/big-project-image.png" class="img-fluid" alt="big-project-image.png"/>
-            <div class="mt-4">
-                <h5 class="fw-bold text-primary">Project Name</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lectus quis augue scelerisque, at cursus sem fringilla.</p>
+		<div className="col-lg-4 px-3 mb-4">
+            <img src={bigProjectImage} className="img-fluid" alt="big-project-image.png"/>
+            <div className="mt-4">
+                <h5 className="fw-bold text-primary">Project Name</h5>
+                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lectus quis augue scelerisque, at cursus sem fringilla.</p>
             </div>
         </div>
 	);

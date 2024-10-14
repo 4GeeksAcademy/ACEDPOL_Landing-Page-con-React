@@ -14,7 +14,15 @@ const Home = () => {
 		<div>
 			<Navbar />
 			<Jumbotron />
-			<Card />
+			<div className="text-bg-light">
+			<div className="container py-5">
+				<div className="row">
+					<Card />
+					<Card />
+					<Card />
+				</div>
+			</div>
+			</div>
 			<Footer />
 		</div>
 	);
