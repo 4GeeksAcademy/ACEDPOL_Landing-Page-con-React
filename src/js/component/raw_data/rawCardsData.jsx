@@ -1,7 +1,7 @@
 const bigProjectImage = "/big-project-image.png";
 const rndCardText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lectus quis augue scelerisque, at cursus sem fringilla.";
 
-const rawData = [
+const cards = [
     {
         "image": bigProjectImage,
         "title": "Project Name 01",
@@ -19,4 +19,4 @@ const rawData = [
     }
 ]
 
-export default rawData;
+export default cards;
