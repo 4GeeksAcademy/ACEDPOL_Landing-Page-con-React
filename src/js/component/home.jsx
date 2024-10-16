@@ -18,8 +18,8 @@ const Home = () => {
 		
 		<div>
 			{/* <_Default image={rigoImage} /> */}
-			<Navbar />
-			<Jumbotron />
+			<Navbar title="Start Bootstrap" section_01="Home" section_02="About" section_03="Services" section_04="Contact" />
+			<Jumbotron title="It's wonderful to see you!!" jumboText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." buttonText="Click para comenzar!" />
 			<div className="text-bg-light">
 			<div className="container py-5">
 				<div className="row">
@@ -29,7 +29,7 @@ const Home = () => {
 				</div>
 			</div>
 			</div>
-			<Footer />
+			<Footer copyRight="Copyright &copy; 4Geeks Academy ~ Acedpol" />
 		</div>
 	);
 };
