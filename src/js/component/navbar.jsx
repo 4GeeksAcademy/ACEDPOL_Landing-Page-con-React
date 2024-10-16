@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import NavBtn from "./utils/navBtn.jsx";
+
+import {buttons} from "./raw_data/rawNavbarData.jsx";
+
 //create your first component
-const Navbar = ({title, navBtn}) => {
+const Navbar = ({title}) => {
 	return (
         <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body data-bs-theme=dark m-0">
             <div className="container-fluid">
@@ -13,10 +17,8 @@ const Navbar = ({title, navBtn}) => {
                 <div className="d-flex flex-row-reverse">
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                    {navBtn.map((btn)=>(
-						<a className="nav-link text-secondary" aria-current="page" href="#">
-							{btn.titleSection}
-                        </a>
+                    {buttons.map((btn)=>(
+						<NavBtn name={btn.titleSection} />
 					))}
                     </div>
                 </div>

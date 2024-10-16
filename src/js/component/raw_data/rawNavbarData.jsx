@@ -1,20 +1,18 @@
-const navBtn = [
+export const buttons = [
     {
-        "id":"#000",
-        "titleSection":"Home"
+        id: 0,
+        titleSection:"Home"
     },
     {
-        "id":"#001",
-        "titleSection":"About"
+        id: 1,
+        titleSection:"About"
     },
     {
-        "id":"#002",
-        "titleSection":"Services"
+        id: 2,
+        titleSection:"Services"
     },
     {
-        "id":"#003",
-        "titleSection":"Contact"
+        id: 3,
+        titleSection:"Contact"
     }
 ]
-
-export default navBtn;
