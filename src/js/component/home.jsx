@@ -7,19 +7,25 @@ import Card from "./card.jsx";
 import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 
+import rigoImage from "../../img/rigo-baby.jpg";
+import bigProjectImage from "../../img/big-project-image.png";
+const rndCardText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lectus quis augue scelerisque, at cursus sem fringilla.";
+
 //create your first component
 const Home = () => {
 	return (
-		// _Default({image: "/rigo-baby.jpg"})
+		// _Default({image: rigoImage})
+		
 		<div>
+			{/* <_Default image={rigoImage} /> */}
 			<Navbar />
 			<Jumbotron />
 			<div className="text-bg-light">
 			<div className="container py-5">
 				<div className="row">
-					<Card image="/big-project-image.png" />
-					<Card />
-					<Card />
+					<Card image={bigProjectImage} title="Project Name 00" cardText={rndCardText} />
+					<Card image={bigProjectImage} title="Project Name 01" cardText={rndCardText} />
+					<Card image={bigProjectImage} title="Project Name 02" cardText={rndCardText} />
 				</div>
 			</div>
 			</div>
