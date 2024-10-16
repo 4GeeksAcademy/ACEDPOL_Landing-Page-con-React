@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 //create your first component
 const _Default = ({image}) => {
-	console.log(image)
 	return (
 		<div className="text-center">
 			<h1 className="text-center mt-5">Hello Rigo!</h1>

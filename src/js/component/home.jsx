@@ -10,21 +10,21 @@ import Jumbotron from "./jumbotron.jsx";
 //create your first component
 const Home = () => {
 	return (
-		_Default({image: "/rigo-baby.jpg"})
-		// <div>
-		// 	<Navbar />
-		// 	<Jumbotron />
-		// 	<div className="text-bg-light">
-		// 	<div className="container py-5">
-		// 		<div className="row">
-		// 			<Card />
-		// 			<Card />
-		// 			<Card />
-		// 		</div>
-		// 	</div>
-		// 	</div>
-		// 	<Footer />
-		// </div>
+		// _Default({image: "/rigo-baby.jpg"})
+		<div>
+			<Navbar />
+			<Jumbotron />
+			<div className="text-bg-light">
+			<div className="container py-5">
+				<div className="row">
+					<Card image="/big-project-image.png" />
+					<Card />
+					<Card />
+				</div>
+			</div>
+			</div>
+			<Footer />
+		</div>
 	);
 };
 
