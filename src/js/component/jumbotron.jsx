@@ -22,7 +22,7 @@ const Jumbotron = ({title, jumboText, buttonText}) => {
 
 Jumbotron.propTypes = {
     title: PropTypes.string.isRequired,
-    cardText: PropTypes.string.isRequired,
+    jumboText: PropTypes.string.isRequired,
     buttonText: PropTypes.string.isRequired
 }
 

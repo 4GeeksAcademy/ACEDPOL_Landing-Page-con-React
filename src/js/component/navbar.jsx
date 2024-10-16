@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //create your first component
 const Navbar = ({title, section_01, section_02, section_03, section_04}) => {
@@ -23,5 +24,13 @@ const Navbar = ({title, section_01, section_02, section_03, section_04}) => {
         </nav>
 	);
 };
+
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired,
+    section_01: PropTypes.string.isRequired,
+    section_02: PropTypes.string.isRequired,
+    section_03: PropTypes.string.isRequired,
+    section_04: PropTypes.string.isRequired
+}
 
 export default Navbar;

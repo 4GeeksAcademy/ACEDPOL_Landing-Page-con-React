@@ -8,11 +8,14 @@ import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 
 import rigoImage from "../../img/rigo-baby.jpg";
+import cards from "./rawData.jsx"
 import bigProjectImage from "../../img/big-project-image.png";
+import rawData from "./rawData.jsx";
 const rndCardText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta lectus quis augue scelerisque, at cursus sem fringilla.";
 
 //create your first component
 const Home = () => {
+	console.log(rawData)
 	return (
 		// _Default({image: rigoImage})
 		
@@ -23,9 +26,13 @@ const Home = () => {
 			<div className="text-bg-light">
 			<div className="container py-5">
 				<div className="row">
-					<Card image={bigProjectImage} title="Project Name 00" cardText={rndCardText} />
-					<Card image={bigProjectImage} title="Project Name 01" cardText={rndCardText} />
-					<Card image={bigProjectImage} title="Project Name 02" cardText={rndCardText} />
+					{cards.map((card)=>(
+						<Card 
+							image={card.image} // image={bigProjectImage} 
+							title={card.title} // title="Project Name 00" 
+							cardText={card.cardText} // cardText={rndCardText} 
+						/>
+					))}
 				</div>
 			</div>
 			</div>
