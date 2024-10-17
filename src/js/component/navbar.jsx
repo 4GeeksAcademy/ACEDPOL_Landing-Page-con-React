@@ -3,10 +3,8 @@ import PropTypes from "prop-types";
 
 import NavBtn from "./utils/navBtn.jsx";
 
-import {buttons} from "./raw_data/rawNavbarData.jsx";
-
 //create your first component
-const Navbar = ({title}) => {
+const Navbar = ({title, buttons}) => {
 	return (
         <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body data-bs-theme=dark m-0">
             <div className="container-fluid">
@@ -29,7 +27,8 @@ const Navbar = ({title}) => {
 };
 
 Navbar.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    buttons: PropTypes.array
 }
 
 export default Navbar;

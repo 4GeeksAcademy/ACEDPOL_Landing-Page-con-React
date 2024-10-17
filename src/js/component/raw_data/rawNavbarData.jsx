@@ -1,4 +1,4 @@
-export const buttons = [
+export const buttonsData = [
     {
         id: 0,
         titleSection:"Home"

@@ -8,16 +8,18 @@ import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 
 import rigoImage from "../../img/rigo-baby.jpg";
+import {buttonsData} from "./raw_data/rawNavbarData.jsx";
 import {cards} from "./raw_data/rawCardsData.jsx";
 const rndText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 
 //create your first component
 const Home = () => {
+	console.log(buttonsData)
 	return (
 		// _Default({image: rigoImage})
 		<div>
 			{/* <_Default image={rigoImage} /> */}
-			<Navbar title="Start Bootstrap" />
+			<Navbar title="Start Bootstrap" buttons={buttonsData} />
 			<Jumbotron 
 				title="It's wonderful to see you!!" 
 				jumboText={rndText}
