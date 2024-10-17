@@ -27,6 +27,7 @@ const Home = () => {
 					<div className="row">
 						{cards.map((card)=>(
 							<Card 
+								key={card.id}
 								image={card.image} // image={bigProjectImage} 
 								title={card.title} // title="Project Name 00" 
 								cardText={card.cardText} // cardText={rndCardText} 

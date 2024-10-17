@@ -18,7 +18,7 @@ const Navbar = ({title}) => {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                     {buttons.map((btn)=>(
-						<NavBtn name={btn.titleSection} />
+						<NavBtn key={btn.id} name={btn.titleSection} />
 					))}
                     </div>
                 </div>

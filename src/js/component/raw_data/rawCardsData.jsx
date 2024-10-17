@@ -3,16 +3,19 @@ const rndCardText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Do
 
 export const cards = [
     {
+        id: 0,
         image: bigProjectImage,
         title: "Project Name 01",
         cardText: rndCardText
     },
     {
+        id: 1,
         image: bigProjectImage,
         title: "Project Name 02",
         cardText: rndCardText
     },    
     {
+        id: 2,
         image: bigProjectImage,
         title: "Project Name 03",
         cardText: rndCardText
